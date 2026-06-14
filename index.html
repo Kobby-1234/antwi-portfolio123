@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  ANTWI KWABENA — PORTFOLIO  ·  index.html (STRUCTURE)
+  ------------------------------------------------------------
+  Plain HTML/CSS/JS. No frameworks, libraries or build tools.
+    index.html      → content + structure (this file)
+    css/styles.css  → all the styling
+    js/main.js      → all the behaviour
+  Search for  EDIT  to find the bits to personalise.
+  ============================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antwi Kwabena — National Service Personnel &amp; Tech Enthusiast</title>
+  <meta name="description" content="Antwi Kwabena — National Service Personnel and tech enthusiast. Web, IT support and building with code. Ghana." />
+
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+
+  <!-- Google Fonts: Sora (headings), Inter (body), Space Mono (labels) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- ==================== HEADER / NAV ==================== -->
+  <header class="site-header" id="top">
+    <div class="container nav-bar">
+      <a class="brand" href="#top" aria-label="Home">
+        <img src="assets/logo.svg" alt="" class="brand-logo" />
+        <span class="brand-name">Antwi Kwabena</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero container" id="home">
+      <div class="hero-text">
+        <p class="eyebrow">National Service Personnel · Tech Enthusiast</p>
+        <!-- EDIT: your name -->
+        <h1 class="hero-title">Antwi<br><span class="grad">Kwabena</span></h1>
+        <!-- EDIT: your tagline -->
+        <p class="hero-tagline">
+          Serving my nation by day, building with code by night. I turn
+          curiosity into working software — and I'm just getting started.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-red">View my work</a>
+          <a href="#contact" class="btn btn-outline">Get in touch</a>
+        </div>
+        <ul class="hero-socials" aria-label="Social links">
+          <!-- EDIT: your real links -->
+          <li><a href="https://github.com/yourname" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/yourname" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="mailto:you@example.com">Email</a></li>
+        </ul>
+      </div>
+
+      <div class="hero-photo">
+        <!-- PROFILE PHOTO
+             EDIT: rename your real photo to profile.jpg, put it in assets/,
+             then change the src below to assets/profile.jpg -->
+        <div class="photo-frame">
+          <img src="assets/profile.svg" alt="Portrait of Antwi Kwabena" class="profile-img" />
+        </div>
+        <span class="photo-badge">Open to opportunities</span>
+      </div>
+    </section>
+
+    <!-- ==================== MARQUEE (signature scrolling ticker) ==================== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Git</span>
+        <span>Problem Solving</span><span>IT Support</span><span>Curiosity</span>
+        <!-- duplicated so the loop is seamless -->
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Git</span>
+        <span>Problem Solving</span><span>IT Support</span><span>Curiosity</span>
+      </div>
+    </div>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="section container" id="about">
+      <p class="eyebrow num">01 / About</p>
+      <h2 class="section-title">Learning fast, building real things.</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <!-- EDIT: 2–3 sentences about you -->
+          <p>
+            I'm Antwi Kwabena — currently a National Service Personnel and a
+            committed tech enthusiast based in Ghana. I spend my free hours
+            learning to code, building small projects, and helping people solve
+            everyday tech problems.
+          </p>
+          <p>
+            I believe the best way to learn is to build. Every project here
+            started as a question I wanted to answer with code.
+          </p>
+        </div>
+        <ul class="fact-list">
+          <li><span class="k">Based in</span><span class="v">Ghana</span></li>
+          <li><span class="k">Focus</span><span class="v">Web · IT Support · Code</span></li>
+          <li><span class="k">Tools</span><span class="v">VS Code · Git · HTML/CSS/JS</span></li>
+          <li><span class="k">Status</span><span class="v">Open to opportunities</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section class="section-alt" id="services">
+      <div class="container">
+        <p class="eyebrow num">02 / Services</p>
+        <h2 class="section-title">How I can help.</h2>
+        <div class="services-grid">
+          <!-- EDIT each card -->
+          <article class="service-card">
+            <span class="service-no">01</span>
+            <h3>Web Development</h3>
+            <p>Clean, responsive websites and landing pages built with HTML, CSS and JavaScript.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-no">02</span>
+            <h3>IT Support &amp; Setup</h3>
+            <p>Troubleshooting, software setup, accounts and device help for individuals and small teams.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-no">03</span>
+            <h3>Tech Training</h3>
+            <p>Friendly, beginner-first sessions on the digital skills people actually need day to day.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-no">04</span>
+            <h3>Automation &amp; Tools</h3>
+            <p>Small scripts and spreadsheet tools that save time on repetitive tasks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS (progress bars) ==================== -->
+    <section class="section container" id="skills">
+      <p class="eyebrow num">03 / Skills</p>
+      <h2 class="section-title">What I'm good at.</h2>
+      <!-- data-width = target % the bar fills to when scrolled into view (set by JS) -->
+      <div class="skills">
+        <div class="skill">
+          <div class="skill-head"><span>HTML &amp; CSS</span><span class="skill-pct">88%</span></div>
+          <div class="bar"><div class="bar-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span>JavaScript</span><span class="skill-pct">72%</span></div>
+          <div class="bar"><div class="bar-fill" data-width="72"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span>Git &amp; GitHub</span><span class="skill-pct">75%</span></div>
+          <div class="bar"><div class="bar-fill" data-width="75"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span>IT Support</span><span class="skill-pct">85%</span></div>
+          <div class="bar"><div class="bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span>Problem Solving</span><span class="skill-pct">90%</span></div>
+          <div class="bar"><div class="bar-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span>Communication</span><span class="skill-pct">86%</span></div>
+          <div class="bar"><div class="bar-fill" data-width="86"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== WORK (carousel) ==================== -->
+    <section class="section-alt" id="work">
+      <div class="container">
+        <p class="eyebrow num">04 / Work</p>
+        <h2 class="section-title">Things I've built.</h2>
+
+        <div class="carousel" id="carousel">
+          <div class="carousel-viewport">
+            <div class="carousel-track" id="carouselTrack">
+
+              <!-- Slide media = simple white-line tech SVGs on red/blue panels.
+                   EDIT: swap for screenshots of your real projects (an <img> works the same). -->
+              <article class="slide">
+                <div class="slide-media red">
+                  <svg viewBox="0 0 220 150" class="ico" aria-label="Browser window">
+                    <rect x="20" y="24" width="180" height="110" rx="6"/>
+                    <line x1="20" y1="48" x2="200" y2="48"/>
+                    <circle cx="34" cy="36" r="3" class="fill"/><circle cx="46" cy="36" r="3" class="fill"/><circle cx="58" cy="36" r="3" class="fill"/>
+                    <line x1="40" y1="70" x2="150" y2="70"/><line x1="40" y1="88" x2="180" y2="88"/><line x1="40" y1="106" x2="120" y2="106"/>
+                  </svg>
+                </div>
+                <div class="slide-body">
+                  <span class="slide-no">PROJECT 01</span>
+                  <h3>Personal Website</h3>
+                  <p>This very portfolio — hand-coded in HTML, CSS and JavaScript and deployed online.</p>
+                  <span class="tag">Web</span>
+                </div>
+              </article>
+
+              <article class="slide">
+                <div class="slide-media blue">
+                  <svg viewBox="0 0 220 150" class="ico" aria-label="Code brackets">
+                    <polyline points="78,45 50,75 78,105"/>
+                    <polyline points="142,45 170,75 142,105"/>
+                    <line x1="120" y1="40" x2="100" y2="110"/>
+                  </svg>
+                </div>
+                <div class="slide-body">
+                  <span class="slide-no">PROJECT 02</span>
+                  <h3>To-Do App (JavaScript)</h3>
+                  <p>A small interactive task app — add, complete and clear tasks, all in vanilla JS.</p>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </article>
+
+              <article class="slide">
+                <div class="slide-media blue">
+                  <svg viewBox="0 0 220 150" class="ico" aria-label="Bar chart">
+                    <line x1="40" y1="120" x2="190" y2="120"/>
+                    <rect x="56" y="80" width="22" height="40" class="fill"/>
+                    <rect x="92" y="56" width="22" height="64" class="fill"/>
+                    <rect x="128" y="92" width="22" height="28" class="fill"/>
+                    <rect x="164" y="40" width="22" height="80" class="fill"/>
+                  </svg>
+                </div>
+                <div class="slide-body">
+                  <span class="slide-no">PROJECT 03</span>
+                  <h3>Data Dashboard</h3>
+                  <p>A simple spreadsheet-driven dashboard summarising survey results at a glance.</p>
+                  <span class="tag">Data</span>
+                </div>
+              </article>
+
+              <article class="slide">
+                <div class="slide-media red">
+                  <svg viewBox="0 0 220 150" class="ico" aria-label="Community network">
+                    <circle cx="110" cy="48" r="12"/>
+                    <circle cx="60" cy="104" r="12"/>
+                    <circle cx="160" cy="104" r="12"/>
+                    <line x1="110" y1="60" x2="66" y2="94"/>
+                    <line x1="110" y1="60" x2="154" y2="94"/>
+                    <line x1="72" y1="104" x2="148" y2="104"/>
+                  </svg>
+                </div>
+                <div class="slide-body">
+                  <span class="slide-no">PROJECT 04</span>
+                  <h3>Community Tech Workshop</h3>
+                  <p>Organised and taught a beginner digital-skills session for fellow service personnel.</p>
+                  <span class="tag">Training</span>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <button class="carousel-btn prev" id="prevBtn" aria-label="Previous project">&#8249;</button>
+          <button class="carousel-btn next" id="nextBtn" aria-label="Next project">&#8250;</button>
+          <div class="carousel-dots" id="carouselDots" aria-label="Choose project"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <p class="eyebrow num light">05 / Contact</p>
+        <h2 class="section-title light">Let's build something together.</h2>
+        <p class="contact-lead">A project, a role, or a question — drop me a line and I'll reply within a day.</p>
+        <div class="contact-cards">
+          <!-- EDIT: your real details -->
+          <a class="contact-card" href="mailto:antwi.kwabena@email.com">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">antwi.kwabena@email.com</span>
+          </a>
+          <a class="contact-card" href="https://linkedin.com/in/antwikwabena" target="_blank" rel="noopener">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/antwikwabena</span>
+          </a>
+          <a class="contact-card" href="tel:+233000000000">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+233 00 000 0000</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#top">
+        <img src="assets/logo.svg" alt="" class="brand-logo" />
+        <span class="brand-name">Antwi Kwabena</span>
+      </a>
+      <p class="copyright">© <span id="year"></span> Antwi Kwabena · Built with HTML, CSS &amp; JavaScript</p>
+      <a href="#top" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

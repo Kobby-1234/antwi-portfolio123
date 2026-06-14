@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Antwi Kwabena logo">
+  <!-- Bold monogram. Replace with your own logo. -->
+  <rect width="64" height="64" rx="14" fill="#DA2A2A"/>
+  <path d="M14 46 L22 18 L30 46" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="17" y1="37" x2="27" y2="37" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M38 18 L38 46 M38 33 L50 18 M38 33 L50 46" fill="none" stroke="#2563EB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
